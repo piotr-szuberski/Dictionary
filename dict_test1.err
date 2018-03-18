@@ -1,0 +1,82 @@
+dict_new()
+dict_new: dict 0 has been created
+dict_size(0)
+dict_size: the Global Dictionary contains 0 element(s)
+dict_new()
+dict_new: dict 1 has been created
+dict_insert(1, "k0", "a")
+dict_insert: dict 1, the pair ("k0", "a") has been inserted
+dict_find(1, "k0")
+dict_find: dict 1, the key "k0" has the value "a"
+dict_insert(1, "k1", "aa")
+dict_insert: dict 1, the pair ("k1", "aa") has been inserted
+dict_find(1, "k1")
+dict_find: dict 1, the key "k1" has the value "aa"
+dict_size(1)
+dict_size: dict 1 contains 2 element(s)
+dict_remove(1, "k1")
+dict_remove: dict 1, the key "k1" has been removed
+dict_find(1, "k1")
+dict_find: the key "k1" not found, looking up the Global Dictionary
+dict_find: the key "k1" not found
+dict_find(1, "k0")
+dict_find: dict 1, the key "k0" has the value "a"
+dict_size(1)
+dict_size: dict 1 contains 1 element(s)
+dict_insert(1, "k0", NULL)
+dict_insert: dict 1, an attempt to insert NULL value
+dict_find(1, "k0")
+dict_find: dict 1, the key "k0" has the value "a"
+dict_size(1)
+dict_size: dict 1 contains 1 element(s)
+dict_insert(1, NULL, NULL)
+dict_insert: dict 1, an attempt to insert NULL key
+dict_insert: dict 1, an attempt to insert NULL value
+dict_size(1)
+dict_size: dict 1 contains 1 element(s)
+dict_remove(1, "k1")
+dict_remove: dict 1 does not contain the key "k1"
+dict_size(1)
+dict_size: dict 1 contains 1 element(s)
+dict_delete(1)
+dict_delete: dict 1 has been deleted
+dict_insert(1, "k0", "b")
+dict_insert: dict 1 does not exist
+dict_size(1)
+dict_size: dict 1 does not exist
+dict_find(1, "k0")
+dict_find: dict 1 does not exist
+dict_find: the key "k0" not found, looking up the Global Dictionary
+dict_find: the key "k0" not found
+dict_new()
+dict_new: dict 2 has been created
+dict_new()
+dict_new: dict 3 has been created
+dict_insert(2, "k0", "c")
+dict_insert: dict 2, the pair ("k0", "c") has been inserted
+dict_insert(2, "k1", "cc")
+dict_insert: dict 2, the pair ("k1", "cc") has been inserted
+dict_insert(2, "k2", "ccc")
+dict_insert: dict 2, the pair ("k2", "ccc") has been inserted
+dict_copy(2, dict 3)
+dict_copy: dict 2 has been copied to dict 3
+dict_size(3)
+dict_size: dict 3 contains 3 element(s)
+dict_clear(3)
+dict_clear: dict 3 has been cleared
+dict_size(3)
+dict_size: dict 3 contains 0 element(s)
+dict_insert(0, "g0", "d")
+dict_insert: the Global Dictionary, the pair ("g0", "d") has been inserted
+dict_size(0)
+dict_size: the Global Dictionary contains 1 element(s)
+dict_find(1, "g0")
+dict_find: dict 1 does not exist
+dict_find: the key "g0" not found, looking up the Global Dictionary
+dict_find: dict 1, the key "g0" has the value "d"
+dict_delete(0)
+dict_delete: an attempt to remove the Global Dictionary
+dict_size(0)
+dict_size: the Global Dictionary contains 1 element(s)
+dict_clear(0)
+dict_clear: the Global Dictionary has been cleared
